@@ -36,7 +36,7 @@ services:
       - ./deploy/docker/nginx/laravel-bjyblog.conf:/etc/nginx/conf.d/laravel-bjyblog.conf
     labels:
       - traefik.port=80
-      - "traefik.http.routers.laravel-bjyblog-nginx.rule=Host(`laravel-bjyblog.test`)"
+      - "traefik.http.routers.laravel-bjyblog-nginx.rule=Host(`stickabat.com`)"
     environment:
       FASTCGI_PASS: php:9000
       DOCUMENT_ROOT: /app/public

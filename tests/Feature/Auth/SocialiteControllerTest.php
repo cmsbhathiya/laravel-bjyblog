@@ -17,7 +17,7 @@ class SocialiteControllerTest extends TestCase
         static::assertEquals($url, url('auth/socialite/redirectToProvider/qq'));
 
         $response      = $this->get($url)->assertStatus(302);
-        $redirect      = 'https://graph.qq.com/oauth2.0/authorize?client_id=&redirect_uri=http%3A%2F%2Flaravel-bjyblog.test%2Fauth%2Foauth%2FhandleProviderCallback%2Fqq&scope=get_user_info&response_type=code&state=';
+        $redirect      = 'https://graph.qq.com/oauth2.0/authorize?client_id=&redirect_uri=http%3A%2F%2Fstickabat.com%2Fauth%2Foauth%2FhandleProviderCallback%2Fqq&scope=get_user_info&response_type=code&state=';
         static::assertStringStartsWith($redirect, $response->headers->get('location'));
     }
 
@@ -28,7 +28,7 @@ class SocialiteControllerTest extends TestCase
         static::assertEquals($url, url('auth/socialite/redirectToProvider/weibo'));
 
         $response      = $this->get($url)->assertStatus(302);
-        $redirect      = 'https://api.weibo.com/oauth2/authorize?client_id=&redirect_uri=http%3A%2F%2Flaravel-bjyblog.test%2Fauth%2Foauth%2FhandleProviderCallback%2Fweibo&scope=&response_type=code&state=';
+        $redirect      = 'https://api.weibo.com/oauth2/authorize?client_id=&redirect_uri=http%3A%2F%2Fstickabat.com%2Fauth%2Foauth%2FhandleProviderCallback%2Fweibo&scope=&response_type=code&state=';
         static::assertStringStartsWith($redirect, $response->headers->get('location'));
     }
 
@@ -39,7 +39,7 @@ class SocialiteControllerTest extends TestCase
         static::assertEquals($url, url('auth/socialite/redirectToProvider/github'));
 
         $response      = $this->get($url)->assertStatus(302);
-        $redirect      = 'https://github.com/login/oauth/authorize?client_id=&redirect_uri=http%3A%2F%2Flaravel-bjyblog.test%2Fauth%2Foauth%2FhandleProviderCallback%2Fgithub&scope=user%3Aemail&response_type=code&state=';
+        $redirect      = 'https://github.com/login/oauth/authorize?client_id=&redirect_uri=http%3A%2F%2Fstickabat.com%2Fauth%2Foauth%2FhandleProviderCallback%2Fgithub&scope=user%3Aemail&response_type=code&state=';
         static::assertStringStartsWith($redirect, $response->headers->get('location'));
     }
 
@@ -50,7 +50,7 @@ class SocialiteControllerTest extends TestCase
         static::assertEquals($url, url('auth/socialite/redirectToProvider/vkontakte'));
 
         $response      = $this->get($url)->assertStatus(302);
-        $redirect      = 'https://oauth.vk.com/authorize?client_id=&redirect_uri=http%3A%2F%2Flaravel-bjyblog.test%2Fauth%2Foauth%2FhandleProviderCallback%2Fvkontakte&scope=email&response_type=code';
+        $redirect      = 'https://oauth.vk.com/authorize?client_id=&redirect_uri=http%3A%2F%2Fstickabat.com%2Fauth%2Foauth%2FhandleProviderCallback%2Fvkontakte&scope=email&response_type=code';
         static::assertStringStartsWith($redirect, $response->headers->get('location'));
     }
 

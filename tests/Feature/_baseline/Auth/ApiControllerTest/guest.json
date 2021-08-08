@@ -9,7 +9,7 @@
             "application\/json"
         ],
         "access-control-allow-origin": [
-            "http:\/\/laravel-bjyblog.test"
+            "http:\/\/stickabat.com"
         ],
         "set-cookie": "set-cookie_ignore"
     },

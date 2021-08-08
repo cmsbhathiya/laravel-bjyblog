@@ -1,22 +1,22 @@
 blog:
   hosts:
     local:
-      ansible_host: local.laravel-bjyblog.test
+      ansible_host: local.stickabat.com
       ansible_user: ubuntu
       ansible_become: true
       ansible_python_interpreter: /usr/bin/python3
     development:
-      ansible_host: development.laravel-bjyblog.test
+      ansible_host: development.stickabat.com
       ansible_user: ubuntu
       ansible_become: true
       ansible_python_interpreter: /usr/bin/python3
     staging:
-      ansible_host: staging.laravel-bjyblog.test
+      ansible_host: staging.stickabat.com
       ansible_user: ubuntu
       ansible_become: true
       ansible_python_interpreter: /usr/bin/python3
     production:
-      ansible_host: production.laravel-bjyblog.test
+      ansible_host: production.stickabat.com
       ansible_user: ubuntu
       ansible_become: true
       ansible_python_interpreter: /usr/bin/python3

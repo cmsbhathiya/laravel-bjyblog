@@ -176,7 +176,7 @@
 - name: Edit host of Helm custom.yaml
   ansible.builtin.lineinfile:
     path: /laravel-bjyblog/site/deploy/helm/custom.yaml
-    regexp: '^host: laravel-bjyblog.test'
+    regexp: '^host: stickabat.com'
     line: 'host: {{ ansible_host }}'
 
 - name: Change elasticsearch.enabled to false
@@ -329,7 +329,7 @@
 - name: Edit .env
   ansible.builtin.lineinfile:
     path: /laravel-bjyblog/site/.env
-    regexp: '^APP_URL=http://laravel-bjyblog.test'
+    regexp: '^APP_URL=http://stickabat.com'
     line: 'APP_URL=http://{{ ansible_host }}'
 
 - name: Get Laravel APP_KEY

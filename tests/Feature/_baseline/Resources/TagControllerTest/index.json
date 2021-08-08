@@ -15,7 +15,7 @@
             59
         ],
         "access-control-allow-origin": [
-            "http:\/\/laravel-bjyblog.test"
+            "http:\/\/stickabat.com"
         ],
         "set-cookie": "set-cookie_ignore"
     },
@@ -43,8 +43,8 @@
             }
         ],
         "links": {
-            "first": "http:\/\/laravel-bjyblog.test\/api\/tags?page=1",
-            "last": "http:\/\/laravel-bjyblog.test\/api\/tags?page=1",
+            "first": "http:\/\/stickabat.com\/api\/tags?page=1",
+            "last": "http:\/\/stickabat.com\/api\/tags?page=1",
             "prev": null,
             "next": null
         },
@@ -59,7 +59,7 @@
                     "active": false
                 },
                 {
-                    "url": "http:\/\/laravel-bjyblog.test\/api\/tags?page=1",
+                    "url": "http:\/\/stickabat.com\/api\/tags?page=1",
                     "label": 1,
                     "active": true
                 },
@@ -69,7 +69,7 @@
                     "active": false
                 }
             ],
-            "path": "http:\/\/laravel-bjyblog.test\/api\/tags",
+            "path": "http:\/\/stickabat.com\/api\/tags",
             "per_page": 1000,
             "to": 2,
             "total": 2

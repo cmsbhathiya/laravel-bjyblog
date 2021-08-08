@@ -11,7 +11,7 @@ class CommandTest extends \Tests\Commands\Upgrade\TestCase
 {
     public function testCommand()
     {
-        Env::getRepository()->set('SESSION_DOMAIN', '.laravel-bjyblog.test');
+        Env::getRepository()->set('SESSION_DOMAIN', '.stickabat.com');
 
         $this->artisan('upgrade:v6.6.0');
 

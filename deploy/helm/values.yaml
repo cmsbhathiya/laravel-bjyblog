@@ -1,5 +1,5 @@
 # Application URLs
-host: laravel-bjyblog.test
+host: stickabat.com
 
 # This value determines the "environment" your application is currently running in
 # Supported: "production", "local"
