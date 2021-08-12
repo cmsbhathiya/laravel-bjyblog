@@ -31,7 +31,7 @@
                 <td>
                     <select class="form-control" name="category_id">
                         @foreach($category as $v)
-                            <option value="{{ $v->id }}" @if($article->category_id === $v->id) selected="selected" @endif>{{ $v->name }}</option>
+                            <option value="{{ $v->id }}" @if($article->category_id == $v->id) selected="selected" @endif>{{ $v->name }}</option>
                         @endforeach
                     </select>
                 </td>
@@ -104,8 +104,8 @@
             <tr>
                 <th>{{ translate('Topping') }}</th>
                 <td>
-                    {{ translate('Yes') }} <input class="bjy-icheck" type="radio" name="is_top" value="1" @if($article->is_top === 1) checked @endif> &emsp;&emsp;
-                    {{ translate('No') }} <input class="bjy-icheck" type="radio" name="is_top" value="0" @if($article->is_top === 0) checked @endif>
+                    {{ translate('Yes') }} <input class="bjy-icheck" type="radio" name="is_top" value="1" @if($article->is_top == 1) checked @endif> &emsp;&emsp;
+                    {{ translate('No') }} <input class="bjy-icheck" type="radio" name="is_top" value="0" @if($article->is_top == 0) checked @endif>
                 </td>
             </tr>
             <tr>
