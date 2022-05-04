@@ -18,6 +18,8 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NSH4LP7');</script>
     <!-- End Google Tag Manager -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8695027799979044"
+     crossorigin="anonymous"></script>
 </head>
 <body>
  <!-- Google Tag Manager (noscript) -->
