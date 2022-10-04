@@ -6,8 +6,7 @@
 
 @section('description', $article->description)
 
-@section('content')
-    <!-- 左侧文章开始 -->
+@section('content')    
     <div class="col-xs-12 col-md-12 col-lg-8">
         @if(Str::isTrue(config('bjyblog.breadcrumb')))
             <div class="row">
@@ -68,7 +67,7 @@
                 </ul>
             </div>
         </div>
-        <!-- 引入通用评论开始 -->
+        
         <script>
             var userEmail='{{ auth()->guard('socialite')->check() ? auth()->guard('socialite')->user()->email : '' }}';
             tuzkiNumber=1;
@@ -163,9 +162,9 @@
             @endforeach
             </div>
         </div>
-        <!-- 引入通用评论结束 -->
+        
     </div>
-    <!-- 左侧文章结束 -->
+    
 @endsection
 
 @section('js')

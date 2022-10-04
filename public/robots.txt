@@ -1,2 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
 User-agent: *
-Disallow: /search?*
+Allow: /
+
+Sitemap: http://stickabat.com/sitemap.xml

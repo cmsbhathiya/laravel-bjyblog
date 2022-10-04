@@ -9,9 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link href="{{ asset('/css/custom.css') }}" rel="stylesheet"> 
     @yield('css')
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NSH4LP7');</script>
+    <!-- End Google Tag Manager -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8695027799979044"
+     crossorigin="anonymous"></script>
 </head>
 <body>
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSH4LP7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->   
 <header id="b-public-nav" class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -165,9 +179,8 @@
     <div class="container">
         <div class="row b-content">
             <dl class="col-xs-12 col-sm-6 col-md-{{ $home_foot_col_number }} col-lg-{{ $home_foot_col_number }}">
-                <dt>{{ translate('Rights') }}</dt>
-                <dd>{{ translate('Licenses') }}：<a rel="nofollow" href="https://creativecommons.org/licenses/by{{ config('bjyblog.licenses.allow_commercial') . config('bjyblog.licenses.allow_adaptation') }}/4.0/deed.{{ config('bjyblog.licenses.language') }}" target="{{ config('bjyblog.link_target') }}">CC BY-NC 4.0</a></dd>
-                <dd>{{ translate('Copyright') }}：© 2014-{{ date('Y') }}</dd>
+                <dt>{{ translate('Contact') }}</dt>                
+                
                 @if(!empty(config('bjyblog.admin_email')))
                     <dd>{{ translate('Contact Email') }}：<a href="mailto:{!! config('bjyblog.admin_email') !!}">{!! config('bjyblog.admin_email') !!}</a></dd>
                 @endif
@@ -177,13 +190,7 @@
             </dl>
 
             <dl class="col-xs-12 col-sm-6 col-md-{{ $home_foot_col_number }} col-lg-{{ $home_foot_col_number }}">
-                <dt>{{ translate('Structure') }}</dt>
-                <dd>{{ translate('Project Name') }}：<a rel="nofollow" href="https://github.com/baijunyao/laravel-bjyblog" target="{{ config('bjyblog.link_target') }}">laravel-bjyblog</a></dd>
-                <dd>{{ translate('Blog Version') }}：<a rel="nofollow" href="https://github.com/baijunyao/laravel-bjyblog" target="{{ config('bjyblog.link_target') }}">{{ config('bjyblog.version') }}-{{ config('bjyblog.branch') }}</a></dd>
-                <dd>{{ translate('Framework Version') }}：<a rel="nofollow"  href="https://github.com/laravel/framework" target="{{ config('bjyblog.link_target') }}">laravel-v{{ \Illuminate\Foundation\Application::VERSION }}</a></dd>
-                <dd>{{ translate('Project Author') }}：<a href="https://baijunyao.com">{{ translate('Junyao Bai') }}</a></dd>
-                <dd>{{ translate('Theme Name') }}：<a rel="nofollow" href="https://github.com/baijunyao/blog-theme-blueberry">blog-theme-blueberry</a></dd>
-                <dd>{{ translate('Theme Author') }}：<a href="https://baijunyao.com">{{ translate('Junyao Bai') }}</a></dd>
+                <dd>{{ translate('Copyright') }}：© {{ date('Y') }} <a href="{{ url("http://stickabat.com") }}">sTickaBaT.com</a></dd>                
             </dl>
 
             <dl class="col-xs-12 col-sm-6 col-md-{{ $home_foot_col_number }} col-lg-{{ $home_foot_col_number }}">

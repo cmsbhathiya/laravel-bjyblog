@@ -34,7 +34,7 @@ class FeedController extends Controller
                 'link'        => url('article', $article->id),
                 'description' => $article->description,
                 'content'     => $article->html,
-                'pubdate'     => $article->created_at,
+                'pubdate'     => \Carbon\Carbon::parse($article->created_at)->format('c'),
             ]);
         }
 
