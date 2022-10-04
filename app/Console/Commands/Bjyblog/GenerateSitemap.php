@@ -52,7 +52,7 @@ class GenerateSitemap extends Command
 
         foreach ($articles as $article) {
             /** @var \App\Models\Article $article */
-            $url_block .= $this->generateUrl(url('article', $article->id), $article->updated_at);
+            $url_block .= $this->generateUrl(url('article', $article->id, $article->name), $article->updated_at);
         }
 
         foreach ($categories as $category) {
